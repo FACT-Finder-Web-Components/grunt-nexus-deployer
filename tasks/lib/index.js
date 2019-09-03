@@ -126,7 +126,7 @@ var createAndUploadArtifacts = function (options, done) {
     var groupIdAsPath = options.groupId.replace(/\./g, "/");
     var groupArtifactPath = groupIdAsPath + '/' + options.artifactId;
 
-    uploads[pomDir + "/outer.xml"] = groupArtifactPath + '/' + 'maven-metadata.xml';
+    // uploads[pomDir + "/outer.xml"] = groupArtifactPath + '/' + 'maven-metadata.xml';
     uploads[pomDir + "/outer.xml.sha1"] = groupArtifactPath + '/' + 'maven-metadata.xml.sha1';
     uploads[pomDir + "/outer.xml.md5"] = groupArtifactPath + '/' + 'maven-metadata.xml.md5';
 
